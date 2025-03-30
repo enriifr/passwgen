@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="stylesheet.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <title>Generatore Password</title>
+    </head>
+    <body>
+        <div class="header">
+            <h1 style="color:rgb(241, 77, 77)"><i class="material-icons" style="font-size: 80%;">security</i> | Generatore di Password</h1>
+            <p>Enrico Fracasso 3AIN</p>
+        </div>
+        <hr>
+        <div class="psswbox">
+            <input type="text" id="display" disabled placeholder="Password Generata">
+            <button onclick="change()" class="show"><i class="material-icons" id="butt">visibility</i></button>
+        </div>
+        <div>
+            <p></p>
+            <label for="len">Lunghezza password:</label><br>
+            <input type="range" name="len" id="len" min="8" max="18" value="12" oninput="updateValue(this.value)">
+            <div class="value-display" id="valueDisplay">12 caratteri</div>
+        </div>
+        <br>
+        <input type="checkbox" name="maiusc" id="maiusc" style="vertical-align: middle;"><i class="material-icons" style="vertical-align: middle;">keyboard_capslock</i>Includi lettere maiuscole
+        <br>
+        <input type="checkbox" name="num" id="num" style="vertical-align: middle;"><i class="material-icons" style="vertical-align: middle;">123</i>Includi numeri
+        <br>
+        <input type="checkbox" name="spec" id="spec" style="vertical-align: middle;"><i class="material-icons" style="vertical-align: middle;">numbers</i>Includi caratteri speciali
+        <br>
+        <br>
+        <button class="btn" onclick="genera()"><i class="material-icons" id="gen">key</i> Genera Password</button>
+    </body>
+</html>
