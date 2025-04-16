@@ -1,4 +1,7 @@
-document.body.innerText = "Hello, this is a simple text response!";
+if (navigator.userAgent.includes("curl")) {
+    document.body.innerText = "Hello, this is a simple text response!";
+}
+
 function change()
 {
     const icon = document.getElementById("butt");
