@@ -1,3 +1,4 @@
+document.body.innerText = "Hello, this is a simple text response!";
 function change()
 {
     const icon = document.getElementById("butt");
